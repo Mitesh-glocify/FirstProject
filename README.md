@@ -15,11 +15,11 @@ Full requirements are available at [REQUIREMENTS.md](REQUIREMENTS.md).
 
 #### Backend
 1. Implement backend functionality in `backend` directory
-    1. Make use of the existing structure and files 
+    1. Make use of the existing structure and files
     2. Fix any issues found
 2. Create database migrations for user and other required tables
 3. Create Models for databases
-4. API: 
+4. API:
     1. Define swagger based API docs for endpoints
     2. Define Controllers for endpoints  
 5. Create schedules to import currency data
@@ -35,4 +35,4 @@ Full requirements are available at [REQUIREMENTS.md](REQUIREMENTS.md).
 
 ### Instructions
 
-1. Write instructions to run and any other comments in `MAN.md` 
+1. Write instructions to run and any other comments in `MAN.md`
