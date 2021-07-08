@@ -1,0 +1,177 @@
+{
+    "env": {
+        "es6": true,
+        "browser": true,
+        "node": true,
+        "mocha": true
+    },
+    "globals": {
+        "afterAll": true,
+        "afterEach": true,
+        "beforeAll": true,
+        "beforeEach": true,
+        "describe": true,
+        "expect": true,
+        "jasmine": true,
+        "jest": true,
+        "test": true,
+        "webpack": true
+    },
+    "plugins": [
+        "react",
+        "jsx-a11y",
+        "import"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:jsx-a11y/recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true,
+            "generators": true,
+            "experimentalObjectRestSpread": true
+        }
+    },
+    "parser": "babel-eslint",
+    "rules": {
+        "arrow-parens": [
+            "warn",
+            "always"
+        ],
+        "comma-spacing": [
+            "warn",
+            {
+                "before": false,
+                "after": true
+            }
+        ],
+        "eol-last": [
+            "error",
+            "always"
+        ],
+        "indent": [
+            "warn",
+            4,
+            {
+                "MemberExpression": 1,
+                "SwitchCase": 1,
+                "ignoredNodes": [
+                    "JSXElement *"
+                ]
+            }
+        ],
+        "keyword-spacing": [
+            "warn",
+            {
+                "after": true,
+                "before": true
+            }
+        ],
+        "max-len": [
+            "warn",
+            200
+        ],
+        "no-console": [
+            "warn",
+            {
+                "allow": [
+                    "info",
+                    "warn",
+                    "error"
+                ]
+            }
+        ],
+        "no-debugger": "warn",
+        "no-eval": "error",
+        "no-trailing-spaces": "warn",
+        "no-unused-vars": [
+            "warn",
+            {
+                "vars": "all",
+                "args": "after-used",
+                "ignoreRestSiblings": true
+            }
+        ],
+        "object-curly-spacing": [
+            "warn",
+            "always",
+            {
+                "arraysInObjects": true,
+                "objectsInObjects": true
+            }
+        ],
+        "padding-line-between-statements": [
+            "warn",
+            {
+                "blankLine": "always",
+                "next": [
+                    "return"
+                ],
+                "prev": [
+                    "class",
+                    "const",
+                    "let"
+                ]
+            }
+        ],
+        "semi": [
+            "warn",
+            "always"
+        ],
+        "import/default": "error",
+        "import/no-unresolved": "off",
+        "react/prop-types": [
+            "error",
+            {
+                "ignore": [
+                    "children"
+                ]
+            }
+        ],
+        "react/display-name": "off",
+        "react/jsx-key": "warn",
+        "react/jsx-boolean-value": [
+            "warn",
+            "never"
+        ],
+        "react/jsx-closing-bracket-location": [
+            "warn",
+            "after-props"
+        ],
+        "react/jsx-curly-spacing": [
+            "warn",
+            {
+                "when": "never",
+                "allowMultiline": true
+            }
+        ],
+        "react/jsx-equals-spacing": [
+            "warn",
+            "never"
+        ],
+        "react/jsx-no-bind": [
+            "warn",
+            {
+                "allowArrowFunctions": true,
+                "allowBind": false
+            }
+        ],
+        "react/jsx-tag-spacing": "warn",
+        "react/no-array-index-key": "warn",
+        "react/no-typos": "warn",
+        "jsx-a11y/click-events-have-key-events": "off",
+        "jsx-a11y/no-noninteractive-element-interactions": "off",
+        "jsx-a11y/no-static-element-interactions": "off",
+        "jsx-a11y/onclick-has-role": "off",
+        "jsx-a11y/alt-text": "off",
+        "space-infix-ops": "warn",
+        "jsx-a11y/media-has-caption": "off",
+        "default-case": "warn"
+    }
+}

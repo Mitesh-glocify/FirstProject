@@ -1,0 +1,20 @@
+# IDE files
+.idea
+.vscode
+# Logs
+*.log
+
+# Compiled binary addons (http://nodejs.org/api/addons.html)
+build
+dist
+
+# Dependency directory
+# Commenting this out is preferred by some people, see
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
+node_modules
+
+backend/logs
+backend/error_logs
+
+# Users Environment Variables
+.lock-wscript

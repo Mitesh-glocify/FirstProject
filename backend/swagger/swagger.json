@@ -1,0 +1,78 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"version": "1.0.0",
+		"title": "Swagger CRUD",
+		"description": "Swagger CRUD description",
+		"termsOfService": "http://swagger.io/terms/"
+	},
+	"basePath": "/",
+	"tags": [
+		{
+			"name": "Users",
+			"description": "User actions"
+		}
+	],
+	"schemes": ["http", "https"],
+	"consumes": ["application/json"],
+	"produces": ["application/json"],
+	"paths": {
+		"/api/v1/users/login": {
+			"post": {
+				"tags": ["Users"],
+				"description": "Create user",
+				"produces": ["application/json"],
+				"parameters": [
+					{
+						"name": "vm",
+						"required": ["email"],
+						"in": "body",
+						"properties": {
+							
+							"email": {
+								"$ref": "#/definitions/email"
+							}
+						}
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Success"
+					},
+					"400": {
+						"description": "Business Exception",
+						"schema": {
+							"$ref": "#/definitions/business_exception"
+						}
+					}
+				}
+			}
+			
+		}
+	},
+	"definitions": {
+		"email": {
+			"type": "string",
+			"description": "email",
+			"example": "example@gmail.com"
+		},
+		"error": {
+			"type": "object",
+			"description": "Error data",
+			"properties": {
+				"msg": {
+					"type": "string",
+					"description": "Error message",
+					"example": "User not found"
+				}
+			}
+		},
+		"business_exception": {
+			"type": "array",
+			"description": "Error array",
+			"items": {
+				"$ref": "#/definitions/error"
+			}
+		}
+	}
+}
